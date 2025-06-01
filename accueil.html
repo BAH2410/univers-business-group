@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Groupe SONOCO</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #000;
+    }
+
+    header {
+      background-color: white;
+      padding: 20px;
+      color: black;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+
+    .nav-links a {
+      color: black;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 1em;
+    }
+
+    .hero {
+      background: url('https://www.groupesonoco.com/wp-content/uploads/2023/05/Design-sans-titre-6.png') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .presentation {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+    }
+
+   .presentation img {
+  width: 100%;
+  max-width: 400px;
+  flex: 1 1 40%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+    .presentation .text {
+      flex: 1 1 50%;
+    }
+
+    .filiales-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.filiale img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.filiale p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+    .stats {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #eee;
+      padding: 40px 20px;
+      margin-top: 40px;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat h3 {
+      font-size: 2em;
+      color: #0c1c47;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta a {
+      background-color: #0c1c47;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .team {
+      text-align: center;
+    }
+
+    .team-member {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 150px;
+    }
+
+    .team img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 10px 0;
+    }
+
+    .team-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .carousel {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+  display: flex;
+  animation: slide 15s infinite;
+  width: 300%;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+
+
+    .footer {
+      background-color: #0c1c47;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+ <header>
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo SONOCO" style="height: 40px;">
+    </div>
+    <nav>
+      <div class="nav-links">
+        <a href="accueil.html">Accueil</a>
+        <a href=".vscode/a-propos.html">À propos</a>
+        <a href="filliales.html">Filiales</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+  </header>
+
+  <section class="hero">
+    <h1>Une référence de l'agroalimentaire en Afrique de l'Ouest</h1>
+  </section>
+
+  <section class="section">
+    <div class="presentation">
+      <img src="images/usine.png" alt="Usine SONOCO">
+      <div class="text">
+        <h2>Qui sommes-nous ?</h2>
+        <p>Le Groupe SONOCO est un acteur majeur de l'industrie agroalimentaire, reconnu pour son expertise dans la production de biens de consommation essentiels tels que la farine, le lait en poudre et l’eau minérale.</p>
+      </div>
+    </div>
+  </section>
+<section class="section">
+  <h2>Nos Domaines</h2>
+  <div class="filiales-grid">
+    <div class="filiale">
+      <img src="images/agroalimentaire.png" alt="Agroalimentaire">
+      <p>L’agroalimentaire</p>
+    </div>
+    <div class="filiale">
+      <img src="images/minoterie.png" alt="Minoterie">
+      <p>La minoterie</p>
+    </div>
+    <div class="filiale">
+      <img src="images/immobilier.png" alt="Immobilier">
+      <p>L’immobilier</p>
+    </div>
+    <div class="filiale">
+      <img src="images/metallurgie.png" alt="Métallurgie">
+      <p>La métallurgie</p>
+    </div>
+    <div class="filiale">
+      <img src="images/transit.png" alt="Transit">
+      <p>Le transit</p>
+    </div>
+    <div class="filiale">
+      <img src="images/construction.png" alt="Construction">
+      <p>La construction</p>
+    </div>
+  </div>
+</section>
+<section class="cta">
+    <a href="filliales.html">Découvrez nos filiales</a>
+  </section>
+
+  </section>
+
+  <section class="section team">
+    <h2>Notre équipe de direction</h2>
+    <div class="team-member">
+      <img src="images/akd.png" alt="PDG">
+      <p><strong>Abdoul Karim Diallo</strong><br>Directeur Général</p>
+    </div>
+    <div class="team-row">
+      <div class="team-member">
+        <img src="images/dsb.png" alt="Membre 1">
+        <p><strong>DR Saliou Barry</strong><br>Directeur Executif top line</p>
+      </div>
+      <div class="team-member">
+        <img src="images/mkb.png" alt="Membre 2">
+        <p><strong>Mohamed KIKI Bah</strong><br>Directeur des operations</p>
+      </div>
+      <div class="team-member">
+        <img src="images/abtr.png" alt="Membre 3">
+        <p><strong>Abdoulaye Toure</strong><br>Directeur HSSE</p>
+      </div>
+      <div class="team-member">
+        <img src="images/arc.png" alt="Membre 4">
+        <p><strong>Aminata R Conde</strong><br>Directrice Communication RSE</p>
+      </div>
+       <div class="team-member">
+        <img src="images/alb.png" alt="Membre 4">
+        <p><strong>Alpha Barry</strong><br>Directeur RH</p>
+      </div>
+       <div class="team-member">
+        <img src="images/abc.png" alt="Membre 4">
+        <p><strong>Aboubacar CAMARA</strong><br>Directeur commercial Marketing</p>
+      </div>
+       <div class="team-member">
+        <img src="images/ddb.png" alt="Membre 4">
+        <p><strong>Daouda Bah</strong><br>Directeur juridique et fiscal</p>
+      </div>
+      <div class="team-member">
+        <img src="images/abr.png" alt="Membre 5">
+        <p><strong>Alimou Barry</strong><br>Directeur financier et contrôle de gestion</p>
+      </div>
+        <div class="team-member">
+        <img src="images/mob.png" alt="Membre 4">
+        <p><strong>Mamadou Oury Bah</strong><br>Responsable Contrôle interne et risques</p>
+      </div>
+    </div>
+  </section>
+<section class="section">
+  <h2>Photothèque</h2>
+  <div class="carousel">
+    <div class="slides">
+      <img src="images/image1.png" alt="photo 1">
+      <img src="images/image2.png" alt="photo 2">
+      <img src="images/image3.png" alt="photo 3">
+      <img src="images/image4.png" alt="photo 3">
+      <img src="images/image5.png" alt="photo 3">
+      <img src="images/Image6.png" alt="photo 3">
+      <img src="images/image7.png" alt="photo 3">
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+    <footer style="background-color: #0c1c47; color: white; padding: 40px 20px;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto; gap: 40px;">
+    
+    <div style="flex: 1 1 250px;">
+      <img src="images/logo.png" alt="Logo" style="width: 150px; margin-bottom: 15px;">
+      <p style="font-size: 0.95em;">L'histoire de notre groupe trouve ses racines dans la réussite précoce de la Société Guinéenne d'Investissement (SGI)...</p>
+      <a href="#" style="display: inline-block; margin-top: 15px; padding: 10px 20px; border: 1px solid white; color: white; text-decoration: none; font-size: 0.9em;">A PROPOS DE NOUS</a>
+    </div>
+
+    <div style="flex: 1 1 200px;">
+      <h3 style="border-bottom: 2px solid red; display: inline-block; padding-bottom: 5px;">Nos Filiales</h3>
+      <ul style="list-style: none; padding: 0; margin-top: 15px; font-size: 0.95em;">
+        <li>AGRO FOOD INDUSTRIE</li>
+        <li>LES MOULINS D'AFRIQUE</li>
+        <li>METAL IMPORT</li>
+        <li>SONOCO TRADE CENTER</li>
+        <li>SONOCO WAQF</li>
+        <li>AM TRANSIT</li>
+        <li>SOHA CONSTRUCTIONS</li>
+      </ul>
+    </div>
+
+    <div style="flex: 1 1 250px;">
+      <h3 style="border-bottom: 2px solid red; display: inline-block; padding-bottom: 5px;">Contact</h3>
+      <p style="font-size: 0.95em; margin-top: 15px;">
+        +224 621 001 900<br>
+        Sonoco Trade Center, KAO32 - Av. William Tubman Almamya -<br>
+        Commune de Kaloum BP : 1492<br>
+        Conakry - République de Guinée<br>
+        <span style="color: red;">contact@groupesonoco.com</span><br>
+        Lun au Ven: 8:30 à 17:30
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+  </footer>
+</body>
+</html>
